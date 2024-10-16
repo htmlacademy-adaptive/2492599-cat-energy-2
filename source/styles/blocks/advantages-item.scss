@@ -1,0 +1,76 @@
+.advantage-item {
+  position: relative;
+}
+
+.advantage-item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantage-item--benefit::before {
+  background-image: url("../../icons/stack.svg#advantage-back-1");
+}
+
+.advantage-item--cook::before {
+  background-image: url("../../icons/stack.svg#advantage-back-2");
+}
+
+.advantage-item--meal::before {
+  background-image: url("../../icons/stack.svg#advantage-back-3");
+}
+
+.advantage-item--time::before {
+  background-image: url("../../icons/stack.svg#advantage-back-4");
+}
+
+.advantage-item__description {
+  margin: 0;
+  display: block;
+  min-height: 60px;
+}
+
+@media (min-width: $tablet) {
+  .advantage-item::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+  }
+
+  .advantage-item::after {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    display: inline-block;
+    width: 136px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: -5;
+  }
+
+  .advantage-item--benefit::after {
+    content: "1";
+    right: -7px;
+  }
+
+  .advantage-item--cook::after {
+    content: "2";
+  }
+
+  .advantage-item--meal::after {
+    content: "3";
+  }
+
+  .advantage-item--time::after {
+    content: "4";
+    right: -4px;
+  }
+}

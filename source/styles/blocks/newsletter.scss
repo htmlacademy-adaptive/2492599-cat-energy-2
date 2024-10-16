@@ -1,0 +1,149 @@
+.newsletter {
+  padding: 0;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  left: 0;
+  top: 10px;
+}
+
+.newsletter__title {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0 40px 0 20px;
+  font-family: $primary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $primary-dark-color;
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+}
+
+.newsletter__description {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 280px;
+  margin-bottom: 22px;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 24px;
+  color: $primary-dark-color;
+}
+
+.newsletter__form {
+  padding: 0 20px;
+}
+
+.newsletter__field-email {
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 13px;
+  width: 100%;
+  min-height: 56px;
+  font-family: $primary-font;
+  font-size: 20px;
+  line-height: 30px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.newsletter__button {
+  width: 100%;
+  min-height: 56px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet) {
+  .newsletter {
+    padding: 0 30px;
+    margin-bottom: 80px;
+  }
+
+  .newsletter::before {
+    top: 14px;
+  }
+
+  .newsletter__title {
+    padding: 0 40px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+  }
+
+  .newsletter__description {
+    max-width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .newsletter__form {
+    display: flex;
+    padding: 0;
+    margin: 0 38px;
+  }
+
+  .newsletter__field-email {
+    margin: 0;
+  }
+
+  .newsletter__button {
+    max-width: 256px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop) {
+  .newsletter {
+    padding: 0;
+    margin-bottom: 102px;
+  }
+
+  .newsletter__title {
+    margin-left: calc(50% - 650px);
+    padding: 0 40px;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 74px;
+  }
+
+  .newsletter__title::before {
+    width: 70px;
+    height: 2px;
+    left: -110px;
+    top: 18px;
+  }
+
+  .newsletter__title::after {
+    width: calc(100% - 294px);
+    left: 294px;
+    top: 18px;
+  }
+
+  .newsletter__description {
+    max-width: 1140px;
+    margin-bottom: 22px;
+  }
+
+  .newsletter__form {
+    width: 752px;
+    margin: 0 auto;
+  }
+
+  .newsletter__button {
+    max-width: 256px;
+    box-sizing: border-box;
+  }
+}

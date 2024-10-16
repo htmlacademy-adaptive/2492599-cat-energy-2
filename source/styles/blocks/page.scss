@@ -1,0 +1,22 @@
+.page__body {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $secondary-color;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet) {
+  .page__body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page__body {
+    margin: 0 auto;
+    padding-top: 55px;
+  }
+}

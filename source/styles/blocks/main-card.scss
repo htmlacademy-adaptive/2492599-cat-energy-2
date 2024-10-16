@@ -1,0 +1,160 @@
+.main-card {
+  max-width: 450px;
+  padding: 20px 20px 25px;
+  border-top: 1px solid #ebebeb;
+}
+
+.main-card__wrapper {
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-card__picture {
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.main-card__image {
+  display: block;
+  margin: auto;
+}
+
+.main-card__title {
+  margin: 0;
+  margin-bottom: 14px;
+  max-width: 80px;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.main-card__points {
+  margin: 0;
+  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-card__points-name {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.main-card__points-description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: end;
+}
+
+.main-card__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .main-card {
+    width: 324px;
+    box-sizing: border-box;
+    padding: 10px 37px 40px;
+    border: none;
+    background-color: #f2f2f2;
+    position: relative;
+  }
+
+  .main-card::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 81px;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+  }
+
+  .main-card__wrapper {
+    margin-bottom: 33px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .main-card__picture {
+    grid-row: 1;
+    align-self: center;
+    margin-bottom: 25px;
+    height: 206px;
+    z-index: 5;
+  }
+
+  .main-card__image {
+    display: block;
+    margin: auto;
+  }
+
+  .main-card__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    max-width: 140px;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .main-card__points {
+    margin: 0;
+    margin-bottom: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 12px;
+  }
+
+  .main-card__points-name {
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+  }
+
+  .main-card__points-name::after {
+    content: "";
+    display: block;
+    width: 248px;
+    height: 1px;
+    background-color: #cdcdcd;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+  }
+
+  .main-card__points-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-card {
+    width: 245px;
+    box-sizing: border-box;
+    padding: 10px 38px 40px;
+  }
+
+  .main-card__picture {
+    margin-bottom: 17px;
+  }
+
+  .main-card__title {
+    margin-bottom: 24px;
+  }
+
+  .main-card__points {
+    margin-bottom: 9px;
+  }
+
+  .main-card__points-name::after {
+    width: 169px;
+    bottom: -6px;
+  }
+}

@@ -1,0 +1,128 @@
+.points__list {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.points__wrapper {
+  min-width: 124px;
+  text-align: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.points__name {
+  font-family: $primary-font;
+  color: $primary-dark-color;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 20px 17px;
+  border: 1px solid #cdcdcd;
+}
+
+.points__description {
+  margin: 0 auto;
+  margin-top: -9px;
+  font-size: 12px;
+  line-height: 12px;
+  width: 80px;
+  padding: 0 4px;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+}
+
+.points__list-price {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.points__name-secondary-style {
+  font-family: $primary-font;
+  color: $primary-dark-color;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.points__description-secondary-style {
+  margin: 0;
+  font-family: $primary-font;
+  color: $primary-dark-color;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .points__list {
+    margin: 0;
+    gap: 43px;
+  }
+
+  .points__wrapper {
+    width: 162px;
+    text-align: center;
+  }
+
+  .points__name {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 15px 8px 17px;
+  }
+
+  .points__description {
+    font-size: 14px;
+    line-height: 14px;
+    min-width: 135px;
+    padding: 0 5px;
+    background-color: #ffffff;
+  }
+
+  .points__list-price {
+    margin: 0;
+    flex-direction: column-reverse;
+    gap: 8px;
+    align-items: end;
+  }
+
+  .points__name-secondary-style {
+    font-size: 20px;
+  }
+
+  .points__description-secondary-style {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .points {
+    margin-bottom: 0;
+  }
+
+  .points__wrapper {
+    margin-bottom: 56px;
+  }
+
+  .points__description {
+    background-color: #f2f2f2;
+  }
+
+  .points__list-price {
+    flex-direction: row-reverse;
+    gap: 63px;
+  }
+}
