@@ -1,0 +1,28 @@
+.services {
+  margin: 0 20px;
+}
+
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $tablet) {
+  .services {
+    margin: 0 30px 46px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .services {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

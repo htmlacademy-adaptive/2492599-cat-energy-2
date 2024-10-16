@@ -1,7 +1,31 @@
 /* GLOBAL */
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
 @import "./common/variables.scss";
 @import "./common/global.scss";
-@import "./common/fonts.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
+@import "./blocks/button.scss";
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/main-menu.scss";
+@import "./blocks/main-page.scss";
+@import "./blocks/inner-page.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/services.scss";
+@import "./blocks/service-item.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-item.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/example.scss";
+@import "./blocks/points.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/main-card.scss";
+@import "./blocks/additional-card.scss";
+@import "./blocks/newsletter.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/map.scss";
+@import "./blocks/links.scss";
+@import "./blocks/social.scss";
