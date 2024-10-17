@@ -11,7 +11,11 @@
 
 .nav--opened .nav__button {
   display: block;
+  width: 18px;
+  height: 18px;
   background: url("../../icons/stack.svg#icon-menu-cross") no-repeat center;
+  top: 22px;
+  right: 20px;
 }
 
 .nav--closed .nav__button {
