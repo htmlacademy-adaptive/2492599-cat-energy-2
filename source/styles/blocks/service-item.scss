@@ -44,7 +44,7 @@
 
 .service-item__link {
   display: inline-block;
-  max-width: 450px;
+  max-width: 175px;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 16px;
@@ -61,7 +61,7 @@
   background: url("../../icons/stack.svg#icon-arrow") no-repeat center;
   position: absolute;
   right: -50px;
-  top: 6px;
+  top: 2px;
 }
 
 .service-item__link:hover::after {
@@ -170,5 +170,9 @@
 
   .service-item__description {
     margin: 0 0 27px;
+  }
+
+  .service-item__link {
+    max-width: 450px;
   }
 }
