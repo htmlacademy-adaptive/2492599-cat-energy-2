@@ -55,8 +55,20 @@
   line-height: 30px;
   color: $secondary-color;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   box-sizing: border-box;
+}
+
+.newsletter__field-email:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.newsletter__field-email:focus {
+  outline: 1px solid #444444;
+}
+
+.newsletter__field-email:invalid {
+  outline: 1px solid #ff8282;
 }
 
 .newsletter__button {

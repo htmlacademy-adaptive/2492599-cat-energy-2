@@ -42,6 +42,22 @@
     left: 0;
   }
 
+  .advantage-item--benefit::before {
+    background-image: url("../../icons/stack.svg#advantage-back-1-tablet");
+  }
+
+  .advantage-item--cook::before {
+    background-image: url("../../icons/stack.svg#advantage-back-2-tablet");
+  }
+
+  .advantage-item--meal::before {
+    background-image: url("../../icons/stack.svg#advantage-back-3-tablet");
+  }
+
+  .advantage-item--time::before {
+    background-image: url("../../icons/stack.svg#advantage-back-4-tablet");
+  }
+
   .advantage-item::after {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;

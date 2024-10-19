@@ -4,6 +4,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.footer__container--inner {
+  background-color: #f2f2f2;
+}
+
 .footer__invitation {
   margin: 0;
   font-family: $primary-font;

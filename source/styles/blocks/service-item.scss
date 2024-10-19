@@ -43,6 +43,8 @@
 }
 
 .service-item__link {
+  display: inline-block;
+  max-width: 175px;
   font-family: $primary-font;
   font-size: 16px;
   line-height: 16px;
@@ -59,7 +61,7 @@
   background: url("../../icons/stack.svg#icon-arrow") no-repeat center;
   position: absolute;
   right: -50px;
-  top: 6px;
+  top: 2px;
 }
 
 .service-item__link:hover::after {
@@ -128,6 +130,12 @@
     right: -58px;
     top: 8px;
   }
+
+  .service-item__link:hover::after,
+  .service-item__link:focus::after,
+  .service-item__link:active::after {
+    right: -62px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -162,5 +170,9 @@
 
   .service-item__description {
     margin: 0 0 27px;
+  }
+
+  .service-item__link {
+    max-width: 450px;
   }
 }
